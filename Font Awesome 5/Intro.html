@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+
+            <h1>Font Awesome 5 Introduction</h1>
+                <p>
+                    To use the Free Font Awesome 5 icons, you can choose to download the Font Awesome library, or you
+                    can sign up for an account at Font Awesome, and get a code (called KIT CODE) to use when you add
+                    Font Awesome to your web page.
+                </p>
+                <b>
+                    Get Your Own KIT CODE
+                </b>
+                <br>
+                <br>
+                <br>
+                <h2>New in Font Awesome 5</h2>
+                    <p>
+                        New in Font Awesome 5 is the <b>fas</b>  prefix, Font Awesome 4 uses <b>fa</b> .
+                    </p>
+                    <p>
+                        The s in fas stands for solid, and some icons also have a regular mode, specified by using the
+                        prefix far:
+                    </p>
+                    <pre>
+                        class="fas fa-clock"
+                        class="far fa-clock"
+                    </pre>
+                <br>
+                <br>
+                <br>
+                <h2>Sizing Icons</h2>   
+                    <p>
+                        The fa-xs, fa-sm, fa-lg, fa-2x, fa-3x, fa-4x, fa-5x, fa-6x, fa-7x, fa-8x, fa-9x, or fa-10x
+                        classes are used to adjust the icon sizes relative to their container.
+                    </p>
+                    <pre>
+                        class="fas fa-clock fa-xs"
+                        class="fas fa-clock fa-sm"
+                        class="fas fa-clock fa-lg"
+                        class="fas fa-clock fa-2x"
+                        class="fas fa-clock fa-5x"
+                        class="fas fa-clock fa-10x"
+                    </pre>
+                <br>
+                <br>
+                <br>
+                <h2>List Icons</h2> 
+                    <p>
+                        The fa-ul and fa-li classes are used to replace default bullets in unordered lists. 
+                    </p>
+                    <ul class="fa-ul">
+                        <li><span class="fa-li"><i class="fas fa-check-square"></i></span>List Item</li>
+                        <li><span class="fa-li"><i class="fas fa-spinner fa-pulse"></i></span>List Item</li>
+                        <li><span class="fa-li"><i class="fas fa-square"></i></span>List Item</li>
+                    </ul>
+                    <pre>
+                        class="fa-li" class="fas fa-check-square"
+                        class="fa-li" class="fas fa-spinner fa-pulse"
+                        class="fa-li" class="fas fa-square"
+                    </pre>
+                <br>
+                <br>
+                <br>
+                <br>
+                <h2>Animated Icons</h2>
+                    <p>
+                        The fa-spin class gets any icon to rotate, and the fa-pulse class gets any icon to rotate with 8
+                        steps.
+                    </p>
+                    <h3>Example </h3>
+                        <i class="fas fa-spinner fa-spin"></i>
+                        <i class="fas fa-spinner fa-pulse"></i>
+
+                        <i class="fas fa-sync-alt fa-spin"></i>
+                        <i class="fas fa-sync-alt fa-pulse"></i>
+
+                        <i class="fas fa-circle-notch fa-spin"></i>
+                        <i class="fas fa-circle-notch fa-pulse"></i>
+
+                        <i class="fas fa-cog fa-spin"></i>
+                        <i class="fas fa-cog fa-pulse"></i>
+
+
+                    <pre>
+                        class="fas fa-spinner fa-spin"
+                        class="fas fa-spinner fa-pulse"
+
+                        class="fas fa-sync-alt fa-spin"
+                        class="fas fa-sync-alt fa-pulse"
+
+                        class="fas fa-circle-notch fa-spin"
+                        class="fas fa-circle-notch fa-pulse"
+
+                        class="fas fa-cog fa-spin"
+                        class="fas fa-cog fa-pulse"
+                    </pre>
+                <br>    
+                <br>    
+                <br>    
+                <h2>Rotated and Flipped Icons</h2>
+                    <p>
+                        The fa-rotate-* and fa-flip-horizontal / vertical classes are use to flip and rotate the icons. 
+                    </p>
+
+                    <i class="fas fa-horse"></i>
+                    <i class="fas fa-horse fa-rotate-90"></i>
+                    <i class="fas fa-horse fa-rotate-180"></i>
+                    <i class="fas fa-horse fa-flip-horizontal"></i>
+                    <i class="fas fa-horse fa-flip-vertical"></i>
+
+
+                <pre>
+                    class="fas fa-horse"
+                    class="fas fa-horse fa-rotate-90"
+                    class="fas fa-horse fa-rotate-180"
+                    class="fas fa-horse fa-flip-horizontal"
+                    class="fas fa-horse fa-flip-vertical"
+                </pre>
+                <br>
+                <br>
+                <br>
+                <br>
+                <h2>Stacked Icons</h2>
+
+                <p>
+                    To stack multiple icons, use the fa-stack class on the parent, the fa-stack-1x class for the
+                    regularly sized icon, and fa-stack-2x for the larger icon.
+                </p>
+                <p>
+                    The fa-inverse class can be used as an alternative icon color. You can also add larger icon classes
+                    to the parent to further control the sizing.
+                </p>
+                    <h3>Example</h3>
+                        <span class="fa-stack fa-lg">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                        </span>
+                        fa-twitter (inverse) on fa-circle (solid)<br>
+                        <span class="fa-stack fa-lg">
+                            <i class="far fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-twitter fa-stack-1x"></i>
+                        </span>
+                        fa-twitter on fa-circle (regular)<br>
+                        <span class="fa-stack fa-lg">
+                            <i class="fas fa-camera fa-stack-1x"></i>
+                            <i class="fas fa-ban fa-stack-2x"></i>
+                        </span>
+                        fa-ban on fa-camera 
+
+
+
+
+                    <pre>
+                        class="fa-stack fa-lg"
+                        class="fas fa-circle fa-stack-2x"
+                        class="fab fa-twitter fa-stack-1x fa-inverse"
+
+                        class="fa-stack fa-lg"
+                        class="far fa-circle fa-stack-2x"
+                        class="fab fa-twitter fa-stack-1x"
+
+                        class="fa-stack fa-lg"
+                        class="fas fa-camera fa-stack-1x"
+                        class="fas fa-ban fa-stack-2x"
+                    </pre>
+
+                    <br>
+                    <br>
+                    <br>
+
+                <h2>Fixed Width Icons</h2>
+                    <p>
+                        Just like letters and other characters, icons can have different widths, and if you need to
+                        vertically align icons like in a list or a menu, this can be a problem.
+                    </p>
+                    <b>
+                        The fa-fw class is used to set icons at a fixed width.
+                    </b>
+                    <h3>Example</h3>    
+                        <p>Fixed Width Ions:</p>
+                        <div>
+                            <i class="fas fa-arrows-alt-v fa-fw"></i> Icon 1
+                        </div>
+                        <div>
+                            <i class="fas fa-band-aid fa-fw"></i> Icon 2
+                        </div>
+                        <div>
+                            <i class="fab fa-bluetooth-b fa-fw"></i> Icon 3
+                        </div>
+
+
+
+
+                        <pre>
+                            class="fas fa-arrows-alt-v fa-fw"
+                            class="fas fa-band-aid fa-fw"
+                            class="fab fa-bluetooth-b fa-fw"
+                        </pre>
+
+
+                        <p>Without Full Width:</p>
+                        <div>
+                            <i class="fas fa-arrows-alt-v "></i> Icon 1 
+                        </div>
+                        <div>
+                            <i class="fas fa-band-aid "></i> Icon 2 
+                        </div>
+                        <div>
+                            <i class="fab fa-bluetooth-b "></i> Icon 3
+                        </div>
+                        
+                        
+                        <pre>
+                            class="fas fa-arrows-alt-v "
+                            class="fas fa-band-aid "
+                            class="fab fa-bluetooth-b 
+                        </pre>
+                <br>
+                <br>
+                <br>
+                <h2>Bordered and Pulled Icons</h2>
+                    <p>
+                        the fa-border , fa-pull-left or  fa-pull-right classes are used for pull quotes or article icons. 
+                    </p>
+                    <h3>Example </h3>
+                        <i class="fas fa-quote-left fa-2x fa-border fa-pull-left"></i>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quos cumque ipsam nulla, nihil commodi, nisi dolores numquam obcaecati, ex nobis iusto distinctio sapiente nemo quaerat sunt recusandae pariatur quas! 
+                        <i class="fas fa-quote-right fa-2x fa-pull-right fa-border"></i>
+
+                    <pre>
+                        class="fas fa-quote-left fa-2x fa-border fa-pull-left"
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Velit quos cumque ipsam nulla, nihil commodi,
+                        nisi dolores numquam obcaecati, ex nobis iusto 
+                        distinctio sapiente nemo quaerat sunt recusandae pariatur quas! 
+                        class="fas fa-quote-right fa-2x fa-pull-right fa-border"
+                    </pre>
+</body>
+</html>
